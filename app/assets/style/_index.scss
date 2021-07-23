@@ -1,0 +1,359 @@
+.banner{
+    background-image: url(https://images.unsplash.com/photo-1509029032154-54ba8b3216d4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    color: #650300;
+    .container{
+        height: 840px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;       
+    }
+    .banner-text{
+        font-weight: bold;
+        text-align: right;
+        
+        p{
+            font-size: 36px;
+        }
+        h2{
+            font-size: 64px;
+        }
+    }
+}
+
+.about{
+  background-color: #AA06010D;  
+  text-align: center;
+  font-weight: bold;
+  
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  li{
+      width: 22%;
+      margin: 52px 15px;
+      .about-text{
+          margin-top: 24px;
+          h4{
+            font-size: 24px;
+            font-weight: bold;
+            color: #650300;
+          }
+
+      }
+  }
+  
+}
+
+.Classic{
+    color: #aa0601;
+    font-weight: bold;
+    font-size: 48px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        li{
+
+            display: flex;
+            align-items: center;
+            margin-top: 32px;
+            .Classic-img{
+                margin-right: 32px;
+                width: 60%;
+            }
+            .Classic-text{
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 10px;
+                }
+            }
+        }
+        .Classic-reverse{
+            .Classic-img{
+                margin-right: 0;
+                margin-left: 32px;
+            }
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+
+.branding{
+    h3{
+        color: #ffffff;
+    }
+    margin-top: 80px;
+    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+    background-position: center;
+    ul{
+        padding: 40px 0 80px 0;
+        display: flex;
+        align-items: center;
+        li{
+            display: flex;
+            max-width: 50%;
+            margin-right: 30px;
+            position: relative;
+            background-color: #fff;
+            .item-picture{
+                opacity: .5;
+            }
+            p{
+                font-weight: bold;
+                white-space:nowrap;
+                font-size: 72px;
+                color: #AA0601;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+    }
+    
+}
+
+.recommend{
+ ul{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 40px;
+     li{
+         width: 24%;
+         border: 1px solid #DEE2E6;
+         box-shadow: 0px 2px 6px #00000029;
+         border-radius: 4px;
+         .card-img{
+             width: 100%;
+         }
+         .card-body{
+             padding: 16px;
+             height: 204px;
+             display: flex;
+             flex-direction: column;
+             justify-content: space-between;
+             .card-title{
+                 p{
+                     padding-bottom: 8px;
+                 }
+             }
+         }
+     }
+ }
+}
+
+.Contac-form{
+    margin-top: 80px;
+   padding-bottom: 80px;
+    background-color: #AA06010D;
+    .container{
+        max-width: 730px;
+        h3{
+            text-align: center;
+            color: #000;
+        }
+        p{
+            margin-top: 16px;
+            font-size: 20px;
+        }
+    }
+    .form-name{
+        margin-top: 20px;  
+        input{
+            padding: 12px 0px 14px 16px;
+            width: 100%;
+        }
+    }
+    .form-pel,.form-mail,.form-opinion{
+        margin-top: 16px;
+        input,textarea{
+            padding: 12px 0px 14px 16px;
+            margin-top: 4px;
+            width: 100%;
+        }
+        
+    }
+    .form-checkbox{
+        margin-top: 16px;
+        color: #000;
+    }
+    .form-submit{
+        margin-top: 40px;
+        text-align: center;
+        input{
+            padding: 16px 0 16px 0;
+            width: 350px;
+            color: #FFF;
+            border: 1px solid #AA0601;
+            background-color: #AA0601;
+        }
+    }
+}
+
+/*RWD*/
+@media(max-width:1200px){
+    .banner{
+        .banner-text{
+            p{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 48px;
+            }
+        }
+    }
+    /*about*/
+    .about{
+        ul{
+           li{
+               width: 42%;
+           }
+        }
+    }
+
+    /*Classic*/
+    .Classic{
+        text-align: center;
+        ul{
+            .Classic-reverse{
+                flex-direction: row;
+                .Classic-img{
+                    margin-left: 0;
+                    margin-right: 32px;
+                }
+            }
+            li{
+                .Classic-img{
+                width: 60%;
+                }
+                .Classic-text{
+                    p{
+                        font-size: 28px;
+                        line-height: 72px;
+                    }
+                }
+            }
+        }
+    }
+
+    /*branding*/
+    .branding{
+        padding-bottom: 30px;
+        ul{
+            padding: 32px 0 56px 0;
+            li{        
+                p{
+                    font-size: 32px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    /*recommend*/
+    .recommend{
+        ul{
+            margin: 0;
+            li{                
+                width: 48%;
+                margin-top: 32px;
+            }
+        }   
+    }
+}
+
+@media(max-width:767px){
+    .banner{
+        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true);
+
+            
+    }
+    /*about*/
+    .about{
+        ul{
+            li{
+                width: 60%;
+            }
+        }
+    }
+    /*classic*/
+    .Classic{
+        ul{
+            li{
+                position: relative;
+                .Classic-img{
+                    width: 100%;
+                }
+                .Classic-text{
+                    margin: 0;
+                    position: absolute;
+                    top: 50%;
+                    left:  50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+
+        }
+    }
+    /*branding*/
+    .branding{
+        
+       ul{
+           padding: 4px 0 40px 0;           
+           flex-direction: column;
+           li{
+            margin-top: 16px;
+           }
+       }
+    }
+    /*recommend*/
+    .recommend{
+        ul{
+            margin-top: 4px;
+            li{
+                margin-top: 16px;
+                width: 100%; 
+            }
+        }
+    }
+
+    /*Contac-form*/
+    .Contac-form{
+        .form-submit{
+            input{
+                width: 210px;
+            }
+        }
+    }
+}
+
+@media(max-width:463px){
+    .banner{
+        .banner-text{
+            p{
+                font-size: 16px;
+                line-height: 30px;
+            }
+            h2{
+                font-size: 32px;
+                line-height: 72px;
+            }
+        }
+     
+    }
+     .Contac-form{
+        .form-submit{
+            input{
+                width: 165px;
+            }
+        }
+    }
+}
