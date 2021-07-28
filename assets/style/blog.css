@@ -1,0 +1,175 @@
+.blog-nav {
+  background: #650300; }
+  .blog-nav .container {
+    padding-bottom: 0; }
+  .blog-nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .blog-nav .navbar ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .blog-nav .navbar li {
+      margin-right: 48px; }
+    .blog-nav .navbar a {
+      display: block;
+      padding: 12px 0;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFF;
+      -webkit-transition: .3s;
+      -o-transition: .3s;
+      transition: .3s; }
+      .blog-nav .navbar a:hover {
+        color: #000; }
+
+.blog-main h4 {
+  border-left: 8px solid #9F1213;
+  margin-top: 40px;
+  font-size: 48px;
+  line-height: 80px;
+  font-weight: bold;
+  padding-left: 16px; }
+
+.blog-main ul {
+  margin-top: 60px; }
+
+.blog-main .blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 30px; }
+  .blog-main .blog-card img {
+    margin-right: 30px;
+    width: 60%; }
+
+.blog-main .blog-card-text {
+  width: 37%; }
+
+.blog-main .blog-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.blog-main .card-title p {
+  font-size: 32px;
+  line-height: 63px;
+  color: #650300; }
+
+.blog-main .card-subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .blog-main .card-subtitle .card-subtitle-text {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000; }
+  .blog-main .card-subtitle .card-subtitle-data {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000; }
+
+.blog-main .card-body {
+  font-size: 20px; }
+
+.blog-main .card-footer a {
+  display: block;
+  text-align: right;
+  font-size: 36px;
+  color: #650300;
+  font-weight: bold; }
+
+@media (max-width: 992px) {
+  .blog-nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .blog-nav .navbar ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .blog-nav .navbar li {
+      margin-right: 48px; }
+    .blog-nav .navbar a {
+      padding: 16px 0;
+      font-size: 16px; }
+  .blog-main h4 {
+    border-left: 4px solid #9F1213;
+    margin-top: 32px; }
+  .blog-main ul {
+    margin-top: 40px; }
+  .blog-main .blog-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 30px; }
+    .blog-main .blog-card img {
+      margin-right: 30px;
+      width: 47%; }
+  .blog-main .blog-card-text {
+    width: 47%; }
+  .blog-main .card-title p {
+    line-height: 30px;
+    font-size: 20px; }
+  .blog-main .card-subtitle .card-subtitle-text {
+    font-size: 16px; }
+  .blog-main .card-subtitle .card-subtitle-data {
+    font-size: 14px; }
+  .blog-main .card-body {
+    font-size: 14px; }
+  .blog-main .card-footer a {
+    font-size: 14px;
+    color: #000; } }
+
+@media (max-width: 767px) {
+  .blog-nav {
+    display: none; }
+  .blog-main h4 {
+    margin-top: 28px; }
+  .blog-main ul {
+    margin-top: 28px; }
+  .blog-main .blog-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-top: 20px; }
+    .blog-main .blog-card img {
+      margin-right: 30px;
+      width: 100%; }
+  .blog-main .blog-card-text {
+    width: 100%; }
+  .blog-main .card-body {
+    display: none; }
+  .blog-main .card-footer {
+    display: none; } }
+
+/*# sourceMappingURL=blog.css.map */
