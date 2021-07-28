@@ -1,162 +1,171 @@
 .footer{
-    background-color: #AA0601;
-    .container{
-        padding: 44px 0 39px 0;    
-        .footer-nav-none{
-            display: none;
+    background: $primary;
+    padding-top: 44px;
+    padding-bottom: 39px;
+   .Contact-body,.Contact-footer{
+       display: flex;
+       justify-content: space-between;
+   }
+   .Contact-nav{
+       margin-top: 10px;
+       display: flex;
+       li{
+           margin-right: 48px;
+       }
+       a{
+           display: block;
+           color: #FFF;
+           padding-bottom: 5px;;
+           line-height: 24px;
+           /*底線*/
+           background-image:linear-gradient(#FFF ,#FFF) ;
+           background-position: left bottom;
+           background-size: 0 2.5px;
+           background-repeat: no-repeat;
+           transition: background-size .4s;
+           &:hover{
+               background-size: 100% 2.5px;
+           }
+       }
+   }
+    .Contact-item{
+        margin-top: 26px;
+    }
+    .Contact-method{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
         }
-        .footer-nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            
-            .footer-item{            
-                display: flex;
-                li{
-                    margin-right: 48px;
-                    a{
-                        font-size: 16px;
-                        line-height: 24px;
-                        color: #ffffff;
-                    }
-                }
-            }
-            .footer-icon{
-                display: flex;
-                li{
-                    margin-left: 32px;
-                }
-            }
+        a{
+            color: #ffffff;
+            font-size: 36px;
+            line-height: 54px;
         }
-        .contact{
-            li{
-                margin-top: 36px;
-                display: flex;
-                align-items: center;
-                a{
-                    margin-left: 22px;
-                    color: #ffffff;
-                    font-size: 36px;
-                    line-height: 54px;
-                }
-            }
+    }
+    .Community{
+        display: flex;
+        li{
+            margin-left: 32px;
         }
-        .hr{
-            margin: 24px 0 32px 0;
-        }    
-        
-        .Terms{
-            display: flex;
-            justify-content: space-between;
-            li{
-                color: #ffffff;
-                font-size: 16px;
-                line-height: 24px;
-                a{
-                    color: #ffffff;
-                    font-size: 14px;
-                    line-height: 21px;
-                    margin-left: 48px;
-                }
-            }
+    }   
+    hr{
+        margin-top: 24px;
+    }
+    .Contact-footer{
+        color: #FFF;
+        margin-top: 32px;
+        a{
+            color: #FFF;
+            margin-left: 48px;
         }
     }
 }
 
-@media(max-width:1200px){
-.footer{
-    padding: 15px 15px;
-    .container{
-        
-        .footer-item{
+@media(max-width:992px){
+    .footer{
+        .Contact-nav{
+            margin: 0;
             li{
                 margin-right: 40px;
             }
         }
-        .footer-icon{
+        .Contact-item{
+            margin-top:18px;
+        }
+        .Contact-method{
+            margin-top: 21px;
             img{
-                width: 24px;
-                height: 24px;
+                margin-right: 11px;
             }
-            
+            a{
+                font-size: 20px;
+                line-height: 30px;
+            }
         }
 
-        .contact{
-            li{
+    }
+    .Community{
+        img{
+            width: 24px;
+            height: 24px;
+           
+        }
+        li{
+            margin-left: 24px;
+        }
+    }
+    .Contact-footer{
+        font-size: 16px;
+        line-height: 24px;
+        li{
+            a{
+                font-size: 14px;
+                line-height: 21px;
+                margin-left: 24px;
+            }
+        }
+        
+    }
+    
+}
+
+@media(max-width:767px){
+    .footer{
+        .Contact-none{
+            display: none;
+        }
+
+        .Contact-item{
+            margin: 0;
+            .Contact-method{
+                margin: 0;
+                margin-bottom: 17px;
+            }
+        }
+
+        .Contact-body{      
+            .Contact-item{
                 img{
                     width: 18px;
                     height: 18px;
                 }
-                a{
-                    font-size: 20px;
-                    line-height: 30px;
-                }
-            }
+            }     
         }
-        
-        hr{
-            margin: 20px 0 24px 0;
-        }
-    }
-}    
-}
 
-@media(max-width:767px){
-.footer{
-    .container{
-            padding: 25px 15px;
-        .footer-nav-none{
-            display: block;
-            display: flex;
-            justify-content: space-between;
-            .nav-none-contact{
-                li{
-                    img{
-                        width: 15px;
-                        height: 15px;
-                    }
-                    a{
-                        font-size: 16px;
-                        line-height: 30px;
-                        color: #ffffff;
-                        margin-left: 6px;
-                    }
-                }
-            }
-
-            .nav-none-icon{
-                ul{
-                    display: flex;
-                    img{
-                        width: 24px;
-                        height: 24px;
-                        margin-left: 6px;
-                    }    
-                }
-                    
-            }
-        }
-            
-        .footer-nav,.contact{
-            display: none;                
-        }
         .hr{
-            margin-top: 24px;
-            margin-bottom: 28px;
+            margin-top: 8px;
         }
-        .Terms{
-            flex-direction: column;
 
-            .Terms-item{
+        .Contact-footer{
+            margin-top: 16px;
+            display: flex;
+            flex-wrap: wrap;
+            li{
                 display: flex;
                 flex-direction: column;
-                a{                        
-                    margin: 0;
+                a{
+                    margin-left: 0;
                     margin-top: 8px;
                 }
-
             }
         }
+       
     }
 }
+
+
+@media(max-width:345px){
+    .footer{
+        .Contact-item{
+            .Contact-method{
+                a{
+                    font-size: 13px;
+                }
+            }    
+        }    
+    }
+
+
 }

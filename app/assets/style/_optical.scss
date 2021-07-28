@@ -1,0 +1,244 @@
+.optical-nav{
+    .container{
+        padding-bottom: 0;
+    }
+    .optical-list{
+        display: flex;
+        justify-content: center;
+    }
+    .optical-items{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #DCDCDC;
+        width: 33%;
+        &:hover{
+            border-bottom: 8px solid #AA0601;
+        }
+    }
+    .active{
+        border-bottom: 10px solid #AA0601;
+    }
+    img{
+        margin-right: 10px;
+    }
+    a{
+        padding: 5px 0;
+        display: block;
+        color: #000;
+        font-size: 32px;
+        line-height: 50px;
+    }
+    
+}
+
+/*banner*/
+.optical-banner{
+    .optical-banner-img{
+        display: flex;
+    }
+    img{
+        width: 50%;
+    }
+
+}
+
+/*optical-product*/
+.optical-product{
+    margin-top: 80px;
+
+    .optical-product{
+        text-align: center;
+        h4{
+            font-size: 42px;
+        }
+        p{
+            font-size: 32px;
+        }
+    }
+
+    .optical-product-list{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .optical-product-item{
+        width:22%;
+        margin-right: 30px;
+        margin-bottom: 104px;
+    }
+    img{
+        width: 100%;
+        height: 164px;
+    }
+    .optical-product-text{
+        display: flex;
+        justify-content: space-between;
+        .color-red{
+            color: $primary;
+        }
+    }
+    .optical-product-color{
+        display: flex;
+        a{
+            margin-right: 8px;
+            display: block;
+            width: 24px;
+            height: 24px;
+            border-radius: 3px;
+        }
+        .color-bronze{
+            background: #5F3E2D;
+        }
+        .color-brown{
+            background: #B75929;
+        }
+    }      
+}
+
+/*Pagination*/
+.Pagination{
+    .Pagination-nav{
+        display: flex;
+        justify-content: center;
+        
+    }
+    a{
+        color: #555555;
+        border: 1px solid #555555;
+        display: block;
+        padding: 11px 12px;
+        font-size: 17px;
+        &:hover{
+            transition: .2s;
+            background: #000;
+            color: #FFF;
+        }
+    }
+    
+}
+
+
+
+
+/*ipad*/
+@media(max-width:992px){
+    /*nav*/
+    .optical-nav{
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        a{
+            font-size: 24px;
+        }
+    }
+    /*optical-product*/
+    .optical-product{
+        margin-top: 56px;
+    
+        .optical-product{
+            h4{
+                font-size: 32px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+    
+        .optical-product-list{
+            margin-top: 32px;
+        }
+        .optical-product-item{
+            width:45%;
+            margin-right: 30px;
+            margin-bottom: 72px;
+        }
+    }
+}
+
+
+
+/*phone*/
+@media(max-width:767px){
+    .optical-nav{
+        img{
+            margin-right: 2px;
+            width: 14px;
+            height: 14px;
+        }
+        a{
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+    /*optical-product*/
+    .optical-product{
+        margin-top: 32px;
+    
+        .optical-product{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 16px;
+                line-height: 36px;
+            }
+        }
+    
+        .optical-product-list{
+            margin-top: 20px;
+        }
+        .optical-product-item{
+            width:100%;
+            margin-right: 0;
+            margin-bottom: 32px;
+        }
+        img{
+            height: 166px;
+        }
+        .optical-product-color{
+            a{  
+                margin-right: 4px;
+                width: 17px;
+                height: 16px;
+            }
+        }      
+    }
+
+    /*Pagination*/
+    .Pagination{
+
+        a{
+            padding: 11px 15px;
+            font-size: 8px;
+        }
+        
+    }
+}
+
+
+
+
+
+@media(max-width:345px){
+    .optical-nav{
+        img{
+            width: 10px;
+            height: 10px;
+        }
+        a{
+            font-size: 10px;
+        }
+    }    
+    /*Pagination*/
+    .Pagination{
+
+        a{
+            padding: 8px 10px;
+            font-size: 8px;
+        }
+        
+    }
+}
